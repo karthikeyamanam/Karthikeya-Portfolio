@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KARTHIKEYA | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Premium Fonts: Syne (Headings), JetBrains Mono (Code), Outfit (UI) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500&family=Outfit:wght@300;400;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="mobile-blocker">
+        <div class="mobile-blocker-inner">
+            <h2 class="mobile-blocker-title">Desktop Experience Only</h2>
+            <p class="mobile-blocker-text">This portfolio can only be viewed on a desktop or laptop screen.</p>
+        </div>
+    </div>
+    <canvas id="hero-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">KARTHIKEYA<span class="dot">.</span></div>
+            <div class="nav-links">
+                <a href="#what-i-do" class="nav-link">WHAT I DO</a>
+                <a href="#skills" class="nav-link">SKILLS</a>
+                <a href="#projects" class="nav-link">PROJECTS</a>
+                <a href="#journey" class="nav-link">JOURNEY</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="main-title">Hi, I’m <span class="gradient-text">Karthikeya</span></h1>
+                <div class="subheading">
+                    <span>Full Stack Web Developer</span>
+                    <span class="divider">|</span>
+                    <span>ML & AI Learner</span>
+                    <span class="divider">|</span>
+                    <span>Problem Solver</span>
+                </div>
+                <div class="tagline">
+                    <span id="typewriter"></span><span class="cursor">|</span>
+                </div>
+                <div class="cta-buttons">
+                    <a href="#" class="btn btn-primary">Download Resume</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="what-i-do" class="services">
+        <div class="services-container">
+            <h2 class="section-title">WHAT I DO</h2>
+            <p class="section-subtitle">Crafting Digital Experiences with Code & Design</p>
+            <div class="bg-pixels" aria-hidden="true"></div>
+            <div class="services-grid">
+                <div class="service-card cyan">
+                    <div class="icon">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1770534010/What_is_meant_by_web_development__zycut9.jpg" alt="Web Development" loading="lazy">
+                    </div>
+                    <h3 class="card-title">Web Design & Development</h3>
+                    <p class="card-desc">Modern, responsive websites with smooth animations.</p>
+                    <a href="#" class="service-cta" data-modal-text="I design and build responsive, high-performing websites that blend clean layouts, smooth animations, and solid frontend fundamentals. From landing pages to full sites, I focus on clarity, speed, and usability.">Learn More <span class="arrow">→</span></a>
+                </div>
+                <div class="service-card purple">
+                    <div class="icon">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1770534010/download_4_geiv1o.jpg" alt="Digital Brand Design" loading="lazy">
+                    </div>
+                    <h3 class="card-title">Digital Brand Design</h3>
+                    <p class="card-desc">Design that stands out and resonates.</p>
+                    <a href="#" class="service-cta" data-modal-text="I create digital visuals and identities that feel cohesive across web, social, and products. The goal is to make your brand instantly recognizable while staying modern and minimal.">Learn More <span class="arrow">→</span></a>
+                </div>
+                <div class="service-card pink">
+                    <div class="icon">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1770534010/UI_UX_Design_Illustration_bgqwge.jpg" alt="UI/UX Design" loading="lazy">
+                    </div>
+                    <h3 class="card-title">UI/UX Design Experiences</h3>
+                    <p class="card-desc">Thoughtful micro-interactions and user flows.</p>
+                    <a href="#" class="service-cta" data-modal-text="I map user flows, wireframes, and polished interfaces that feel intuitive from the first click. I pay attention to small details like micro-interactions, states, and feedback to make every screen feel alive.">Learn More <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="service-modal" role="dialog" aria-modal="true" aria-labelledby="service-modal-title" aria-hidden="true">
+        <div class="service-modal-dialog">
+            <button class="service-modal-close" aria-label="Close details">×</button>
+            <h3 id="service-modal-title" class="service-modal-title"></h3>
+            <p class="service-modal-body"></p>
+        </div>
+    </div>
+
+    <section id="skills" class="skills">
+        <div class="skills-container">
+            <h2 class="section-title">MY SKILLS</h2>
+            <p class="section-subtitle">Technologies I work with</p>
+            <div class="skills-slider">
+                <div class="skills-cards">
+                    <div class="skill-card">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1771214046/ChatGPT_Image_Feb_16_2026_09_21_22_AM_dyk5ao.png" alt="HTML5">
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">HTML5</h3>
+                            <p class="skill-card-desc">Semantic, accessible markup to structure modern, responsive web.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1771214044/ChatGPT_Image_Feb_16_2026_09_21_25_AM_ce6qdb.png" alt="CSS3">
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">CSS3</h3>
+                            <p class="skill-card-desc">Pixel-perfect layouts, animations, and responsive styling across devices.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1771214045/ChatGPT_Image_Feb_16_2026_09_21_27_AM_fv7nya.png" alt="JavaScript">
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">JavaScript</h3>
+                            <p class="skill-card-desc">Interactive UI logic and ES features for dynamic web experiences.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1771214043/ChatGPT_Image_Feb_16_2026_09_21_32_AM_zyrywk.png" alt="PHP">
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">PHP</h3>
+                            <p class="skill-card-desc">Server-side scripting to power dynamic pages and backend logic.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1771214045/ChatGPT_Image_Feb_16_2026_09_21_30_AM_cknwg2.png" alt="MySQL">
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">MySQL</h3>
+                            <p class="skill-card-desc">Relational database design, queries, and data management for projects.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1771214036/ChatGPT_Image_Feb_16_2026_09_21_50_AM_bptuwv.png" alt="UI and UX">
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">UI &amp; UX</h3>
+                            <p class="skill-card-desc">Designing intuitive interfaces with a focus on user-centered flows.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1771214038/ChatGPT_Image_Feb_16_2026_09_21_52_AM_nkrr6a.png" alt="GitHub">
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">GitHub</h3>
+                            <p class="skill-card-desc">Version control, collaboration, and project hosting using Git workflows.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1771214038/ChatGPT_Image_Feb_16_2026_09_21_48_AM_ryplx5.png" alt="VS Code">
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">VS Code</h3>
+                            <p class="skill-card-desc">Efficient development setup with extensions, shortcuts, and debugging.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1771214038/ChatGPT_Image_Feb_16_2026_09_21_41_AM_f1fmxs.png" alt="Logical Thinking">
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">Logical Thinking</h3>
+                            <p class="skill-card-desc">Breaking problems into clear, solvable steps for reliable solutions.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1771214038/ChatGPT_Image_Feb_16_2026_09_21_43_AM_r8qthr.png" alt="Blender">
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">Blender</h3>
+                            <p class="skill-card-desc">Creating 3D assets and visuals to enhance digital experiences.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1771214038/ChatGPT_Image_Feb_16_2026_09_21_45_AM_gfgcly.png" alt="Creative Prompts">
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">Creative Prompts</h3>
+                            <p class="skill-card-desc">Using prompts to explore ideas and generate unique design concepts.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1771214039/ChatGPT_Image_Feb_16_2026_09_21_36_AM_ttotxf.png" alt="DSA">
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">DSA</h3>
+                            <p class="skill-card-desc">Data structures and algorithms for efficient, optimized problem solving.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1771214042/ChatGPT_Image_Feb_16_2026_09_21_34_AM_oavhfo.png" alt="GSAP">
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">GSAP</h3>
+                            <p class="skill-card-desc">Smooth, performance-friendly animations for web interactions.</p>
+                        </div>
+                    </div>
+                    <div class="skill-card">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1771214044/ChatGPT_Image_Feb_16_2026_09_21_38_AM_vildxl.png" alt="Problem Solving">
+                        <div class="skill-card-content">
+                            <h3 class="skill-card-title">Problem Solving</h3>
+                            <p class="skill-card-desc">Consistent, methodical approach to debugging and feature delivery.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="projects-container">
+            <h2 class="section-title">PROJECTS</h2>
+            <p class="section-subtitle">Hands-on experience on real-world projects.</p>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-media">
+                        <video src="https://res.cloudinary.com/dmdrn1bge/video/upload/v1770688338/3d_product_animation_Garments_720P_zpbmpm.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                    <span class="project-tag">E-commerce</span>
+                    <h3 class="project-title">KVK Fashion</h3>
+                    <p class="project-desc">A modern fashion store with clean product grids, smooth hover effects, and responsive layouts.</p>
+                    <div class="project-meta">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                    </div>
+                    <a href="#" class="project-cta">View Now <span class="arrow">→</span></a>
+                </div>
+                <div class="project-card">
+                    <div class="project-media">
+                        <video src="https://res.cloudinary.com/dsejbqhm0/video/upload/v1744286285/hero-1_rhxdvp.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                    <span class="project-tag">Gaming</span>
+                    <h3 class="project-title">Gaming Site</h3>
+                    <p class="project-desc">A gaming landing page with bold visuals, dark theme, and hover-driven interactions.</p>
+                    <div class="project-meta">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                    </div>
+                    <a href="https://gaming-site-vhv3.vercel.app/" class="project-cta" target="_blank" rel="noopener noreferrer">View Now <span class="arrow">→</span></a>
+                </div>
+                <div class="project-card">
+                    <div class="project-media">
+                        <video src="https://res.cloudinary.com/dmdrn1bge/video/upload/v1770695925/Firefly_A_cinematic_shot_opens_with_a_large_sleek_preview_of_a_pre-designed_website_floating_in_a_cczx3j.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                    <span class="project-tag">No-Code Tool</span>
+                    <h3 class="project-title">Web Editable Web</h3>
+                    <p class="project-desc">A web-editable builder that lets non-developers update site content directly in the browser.</p>
+                    <div class="project-meta">
+                        <span>JavaScript</span><span>UX</span><span>Editor</span>
+                    </div>
+                    <a href="https://wew-web-editable-web.vercel.app/" class="project-cta" target="_blank" rel="noopener noreferrer">View Now <span class="arrow">→</span></a>
+                </div>
+                <div class="project-card">
+                    <div class="project-media">
+                        <video src="https://res.cloudinary.com/dmdrn1bge/video/upload/v1762525405/success_dk16jz.mp4" autoplay muted loop playsinline></video>
+                    </div>
+                    <span class="project-tag">Digital Brand</span>
+                    <h3 class="project-title">Tune Forge</h3>
+                    <p class="project-desc">A digital brand website for a music platform, focused on strong visuals, hierarchy, and clear storytelling.</p>
+                    <div class="project-meta">
+                        <span>Branding</span><span>UI/UX</span><span>Landing Page</span>
+                    </div>
+                    <a href="https://tuneforge-ecommerce.vercel.app/" class="project-cta" target="_blank" rel="noopener noreferrer">View Now <span class="arrow">→</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-layout">
+                <div class="about-left">
+                    <div class="about-photo">
+                        <img src="https://res.cloudinary.com/dmdrn1bge/image/upload/v1770732832/Manga_Boys_sharp_cool_dramatic_iuctdj.jpg" alt="Portrait of Karthikeya">
+                    </div>
+                </div>
+                <div class="about-right">
+                    <div class="about-label">ABOUT ME</div>
+                    <h2 class="about-title">I'M KARTHIKEYA</h2>
+                    <p class="about-role">Full Stack Developer • 3D Web Architect • AI/ML Learner</p>
+                    <p class="about-description">I am a developer who loves silent focus and deep thinking. I create cinematic web experiences using Three.js, animations that feel alive with GSAP, and interfaces that blend art and logic.</p>
+                    <div class="about-tags">
+                        <span class="about-chip">Three.js</span>
+                        <span class="about-chip">React.js</span>
+                        <span class="about-chip">Python</span>
+                        <span class="about-chip">GSAP</span>
+                        <span class="about-chip">HTML/CSS</span>
+                        <span class="about-chip">UI/UX</span>
+                    </div>
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <div class="about-stat-value">30+</div>
+                            <div class="about-stat-label">Projects</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="about-stat-value">5+</div>
+                            <div class="about-stat-label">Years Coding</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="about-stat-value">BCA</div>
+                            <div class="about-stat-label">Final Year</div>
+                        </div>
+                        <div class="about-stat">
+                            <div class="about-stat-value">AI Developer</div>
+                            <div class="about-stat-label">Career Target</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="journey" class="journey">
+        <div class="journey-container">
+            <h2 class="section-title">MY JOURNEY</h2>
+            <p class="section-subtitle">Step-by-step path from first line of code to LTI-ready.</p>
+            <div class="timeline-container">
+                <svg class="timeline-path" viewBox="0 0 100 1000" preserveAspectRatio="none">
+                    <path class="journey-path-base" d="M50 0 L50 120 L30 120 L30 240 L70 240 L70 360 L30 360 L30 480 L70 480 L70 600 L30 600 L30 720 L70 720 L70 1000" />
+                    <path id="journey-path-active" d="M50 0 L50 120 L30 120 L30 240 L70 240 L70 360 L30 360 L30 480 L70 480 L70 600 L30 600 L30 720 L70 720 L70 1000" />
+                </svg>
+
+                <div class="milestone left" data-year="2021" data-progress="0.06" style="--y:10%;">
+                    <div class="node">
+                        <span class="year">2021</span>
+                    </div>
+                    <div class="journey-card">
+                        <div class="journey-card-title">Started Coding</div>
+                        <div class="journey-card-subtitle">Begin</div>
+                        <p class="journey-card-desc">Started with HTML, CSS, Python basics.</p>
+                    </div>
+                </div>
+
+                <div class="milestone right" data-year="2022" data-progress="0.24" style="--y:25%;">
+                    <div class="node">
+                        <span class="year">2022</span>
+                    </div>
+                    <div class="journey-card">
+                        <div class="journey-card-title">Foundations Built</div>
+                        <div class="journey-card-subtitle">Practice</div>
+                        <p class="journey-card-desc">Improved JavaScript logic and backend basics.</p>
+                    </div>
+                </div>
+
+                <div class="milestone left" data-year="2023" data-progress="0.42" style="--y:40%;">
+                    <div class="node">
+                        <span class="year">2023</span>
+                    </div>
+                    <div class="journey-card">
+                        <div class="journey-card-title">Multiple Web Projects</div>
+                        <div class="journey-card-subtitle">Build</div>
+                        <p class="journey-card-desc">Created multiple websites and refined UI/UX thinking.</p>
+                    </div>
+                </div>
+
+                <div class="milestone right" data-year="2024" data-progress="0.6" style="--y:55%;">
+                    <div class="node">
+                        <span class="year">2024</span>
+                    </div>
+                    <div class="journey-card">
+                        <div class="journey-card-title">3D Web + Animations</div>
+                        <div class="journey-card-subtitle">Cinematic</div>
+                        <p class="journey-card-desc">Focused on Three.js, GSAP, and cinematic web interactions.</p>
+                    </div>
+                </div>
+
+                <div class="milestone left" data-year="2025" data-progress="0.78" style="--y:70%;">
+                    <div class="node">
+                        <span class="year">2025</span>
+                    </div>
+                    <div class="journey-card">
+                        <div class="journey-card-title">AI / ML Learning</div>
+                        <div class="journey-card-subtitle">Study</div>
+                        <p class="journey-card-desc">Learning automation, ML models, and intelligent systems.</p>
+                    </div>
+                </div>
+
+                <div class="milestone right" data-year="2026" data-progress="0.92" style="--y:85%;">
+                    <div class="node">
+                        <span class="year">2026</span>
+                    </div>
+                    <div class="journey-card">
+                        <div class="journey-card-title">Career Goal</div>
+                        <div class="journey-card-subtitle">Target</div>
+                        <p class="journey-card-desc">Preparing for AI developer role with focused, advanced projects.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title">CONTACT</h2>
+            <p class="section-subtitle">Ready to build something cinematic and sharp together.</p>
+            <div class="contact-grid">
+                <div class="contact-left">
+                    <h3 class="contact-heading">Let’s connect</h3>
+                    <p class="contact-text">Share your idea, portfolio feedback, or an opportunity. I reply quickly and clearly.</p>
+                    <div class="contact-details">
+                        <a href="mailto:karthikeyamanam00@gmail.com" class="contact-link">karthikeyamanam00@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form class="contact-form">
+                        <div class="contact-row">
+                            <input type="text" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="contact-row">
+                            <input type="email" name="email" placeholder="Your email" required>
+                        </div>
+                        <div class="contact-row">
+                            <textarea name="message" rows="4" placeholder="Tell me about your project or question" required></textarea>
+                        </div>
+                        <button type="submit" class="contact-button">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="cursor-ring"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
